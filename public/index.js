@@ -62,7 +62,7 @@ async function postMember() {
 
   isPosting = false
   document.getElementById('post-container').style.display = 'none'
-  document.getElementById('add-member').innerHTML = 'Post myself'
+  document.getElementById('add-member').innerHTML = 'Add me'
   showAllMembers()
 }
 
@@ -85,7 +85,7 @@ async function showAllMembers() {
     const q = query(collection(db, "members"));
     const querySnapshot = await getDocs(q);
     totalMembers = querySnapshot.size
-    document.getElementById('member-count').innerHTML = `${querySnapshot.size} members`
+    document.getElementById('member-count').innerHTML = `${querySnapshot.size} builders`
     hideLoading()
     querySnapshot.forEach((doc) => {
         showMember(doc.data())

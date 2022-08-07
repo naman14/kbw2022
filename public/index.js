@@ -99,7 +99,7 @@ function showMember(member) {
       <div style="display: flex; flex-direction: row; align-items: center;">
         <div style="flex-grow: 1;">
         <p style='font-weight:500, font-size:18px; line-height:1px;'>${member.name}</p>
-        <p style='opacity:0.4; font-weight:400, font-size:16px; line-height:1px; padding-top: 8px;'>${member.designation}, ${member.company}</p>
+        <p style='opacity:0.4; font-weight:400, font-size:16px; padding-top: 8px;'>${member.designation}, ${member.company}</p>
         </div>
         <img id='twitter-${member.memberId}' src="./twitter.png" width="30" height="30" style='cursor: pointer;'/>
       </div>
